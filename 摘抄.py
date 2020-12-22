@@ -7,7 +7,7 @@ import os, sys
 class Ui_MainWindow(QtWidgets.QMainWindow):
 
     def __init__(self):
-        super(Ui_MainWindow, self).__init__()
+        super(Ui_MainWindow, self).__init__()  # 主程序窗口实例化
         self.setupUi(self)
         self.retranslateUi(self)
 
@@ -39,7 +39,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         :return:
         """
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Innce_FDYT"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Innce_FDYT"))  # 设置窗体的名称等信息
 
     def openfile(self):
         openfile_name = QFileDialog.getExistingDirectory(self)
